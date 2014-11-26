@@ -17,8 +17,8 @@ This assumes you've already uploaded your document to [DocumentCloud](https://ww
 ## Changes we've made
 
 * Added our Austin American-Statesman logo, though it looks pretty damn big
-* Changed the worker url from dc.html to index.html so we can just add the doc param to the end of /documents/
-
+* Changed the worker url from dc.html to index.php so we can just add the doc param to the end of /documents/
+* Added metrics so we can track the page views
 
 --------------------
 
