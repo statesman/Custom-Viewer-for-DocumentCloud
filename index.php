@@ -1,8 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd"> 
 <html> 
-<head><title id="maintitle">Austin American-Statesman Document Viewer</title> 
-    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"> 
+<head>
+  <title id="maintitle">Austin American-Statesman Document Viewer</title> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"> 
 	<link href="css/document-cloud.css" media="all" rel="stylesheet" type="text/css"> 
 	 
    
@@ -89,7 +90,7 @@
 	}
 		
 </script>	
-	
+<?php include "js/metrics-head.js"; ?>	
 </head> 
 <body onload="init();"> 
 
@@ -109,6 +110,6 @@
 <div id="document"> 
 </div> 
  
-
+  <?php include "js/metrics.js"; ?>
 </body> 
 </html>
