@@ -5,20 +5,76 @@ This is a fork of John Keefe's [Custom-Viewer-for-DocumentCloud](https://github.
 
 ## How to use
 
-This assumes you've already uploaded your document to [DocumentCloud](https://www.documentcloud.org), filled out all the Document information (under Edit) and made the Access Level: Public Access.
+This assumes you've already uploaded your document to [DocumentCloud](https://www.documentcloud.org), filled out all the Document information (under Edit) and made the Access Level: Public Access. If you include a Published URL in the document information, it will link back to your story.
 
-* Go into DocumentCloud and open the document so you are viewing it.
-* Get the part of the url that is between "https://www.documentcloud.org/documents/" and ".html".
-	* If your original url is: https://www.documentcloud.org/documents/1202682-seekingexpertise.html
-	* You want: 1202682-seekingexpertise
-* Add that part of the url to the end of this: http://projects.statesman.com/documents/?doc=
-* So it should look something like this: http://projects.statesman.com/documents/?doc=1202682-seekingexpertise
+
+## Link to a published document
+
+Open your document in DocumentCloud and look at the url. Here is our example:
+
+	https://www.documentcloud.org/documents/1377329-ncsl-jackstick-2012.html
+
+You want the part of the URL between "/documents/" and ".html"
+
+In this case it will be:
+
+	1377329-ncsl-jackstick-2012
+
+Now, we are going to add that portion to the end of this url:
+
+	http://projects.statesman.com/documents/?doc=
+
+So, it will end up like this:
+
+http://projects.statesman.com/documents/?doc=1377329-ncsl-jackstick-2012
+
+You can now use that link to your story, a timeline or what have you ...
+
+## Linking to Public Note within a document
+
+It's the same process as above, but you have to add on the note hash.
+
+Go to the document and then click on the Public note to it looks like above.
+
+Click on the chain icon at the top of the note. This will append the note hash to the end of the url.
+
+Here is our example url now:
+
+	https://www.documentcloud.org/documents/1377329-ncsl-jackstick-2012.html#document/p16/a193129
+
+and the note has is the part with the # and what follows:
+
+	#document/p16/a193129
+
+Now, we put the url together like we did above, but we add the hash to the end, so
+
+Base url
+
+	http://projects.statesman.com/documents/?doc=
+
+Document
+
+	1377329-ncsl-jackstick-2012
+
+Note
+
+	#document/p16/a193129
+
+Put it together as: http://projects.statesman.com/documents/?doc=1377329-ncsl-jackstick-2012#document/p20/a193130
+
+
+
 
 ## Changes we've made
 
 * Added our Austin American-Statesman logo, though it looks pretty damn big
 * Changed the worker url from dc.html to index.php so we can just add the doc param to the end of /documents/
 * Added metrics so we can track the page views
+
+
+
+
+
 
 --------------------
 
