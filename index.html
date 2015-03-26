@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>DocumentCloud custom viewer URL builder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+        <link rel="stylesheet" href="bower_components/bootswatch/cosmo/bootstrap.min.css">
+        <style>
+          .wrapper {
+            padding: 0 15px;
+            margin: 0 auto;
+            max-width: 600px;
+          }
+
+          label {
+            font-size: 115%;
+          }
+
+          #info {
+            margin-bottom: 20px;
+          }
+
+          #info .media-left {
+            margin-right: 5px;
+          }
+
+          #info img {
+            border: 1px solid #cccccc;
+          }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+
+          <div class="page-header">
+            <h1>Custom DocumentCloud URL generator</h1>
+            <p>We have a <a href="http://projects.statesman.com/documents/?doc=1508205-report-of-investigation" target="_blank">Statesman-branded version</a> of DocumentCloud's document viewer. To use it, make your document public then change the URL from DocumentCloud's documentcloud.org URL to our statesman.com one using the tool below.</p>
+            <p>Paste in the URL to your document below, then copy the Statesman.com URL that it generates. You can paste URLs to links and specific pages, too, which are all supported by the Statesman.com viewer.</p>
+          </div>
+
+          <div class="form">
+            <div class="form-group">
+              <label for="dc-url">DocumentCloud.org URL</label>
+              <input id="dc-url" type="text" class="form-control input-lg" placeholder="https://www.documentcloud.org/documents/your-doc.html">
+            </div>
+          </div>
+
+          <div id="dc-error" style="display:none;" class="alert alert-danger" role="alert"><strong>Document not found.</strong> Double-check your URL. We can't find your document on DocumentCloud or your document is still marked as Private.</div>
+
+          <div id="info" class="clearfix" style="display:none;">
+            <div class="media-left pull-left">
+              <img class="media-object">
+            </div>
+            <label for="dc-url">Document information</label>
+            <dl>
+              <dt >Title</dt>
+              <dd id="title"></dd>
+
+              <dt >Annotations</dt>
+              <dd id="annotations"></dd>
+
+              <dt >Pages</dt>
+              <dd id="pages"></dd>
+            </dl>
+          </div>
+
+          <div class="form">
+            <div class="form-group">
+              <label for="st-url">Statesman.com URL</label>
+              <input id="st-url" readonly type="text" class="form-control input-lg">
+            </div>
+          </div>
+
+        </div>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/js-url/url.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

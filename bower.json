@@ -1,0 +1,17 @@
+{
+  "name": "customer-dc-viewer-url-generator",
+  "version": "0.0.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "js-url": "websanova/js-url#~1.8.6",
+    "bootswatch": "~3.3.4+1"
+  }
+}
