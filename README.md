@@ -3,6 +3,10 @@ Statesman document viewer
 
 This is a fork of John Keefe's [Custom-Viewer-for-DocumentCloud](https://github.com/jkeefe/Custom-Viewer-for-DocumentCloud) for use with Austin American-Statesman documents.
 
+## Link builder
+
+[Go here](http://statesman.github.io/Custom-Viewer-for-DocumentCloud/) For an easy way to translate a DocumentCloud link to a Statesman link. 
+
 ## How to use
 
 This assumes you've already uploaded your document to [DocumentCloud](https://www.documentcloud.org), filled out all the Document information (under Edit) and made the Access Level: Public Access. If you include a Published URL in the document information, it will link back to your story.
