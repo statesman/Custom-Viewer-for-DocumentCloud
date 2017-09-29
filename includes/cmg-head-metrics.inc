@@ -1,4 +1,4 @@
-                <!-- begin metrics_common_override block -->
+<!-- begin metrics_common_override block -->
 <script>localStorage.setItem("sdsat_debug", true);</script>
 <script>
 if(typeof(pubsub)=="undefined"){

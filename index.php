@@ -33,7 +33,7 @@
      #document-source {margin:1px 0 3px; font-size:.8em;}
 
    </style>
-   
+ 
 	<script type="text/javascript" src="http://s3.documentcloud.org/viewer/loader.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>  
 	<script type="text/javascript" src="js/jquery.url.min.js"></script>  
@@ -90,8 +90,10 @@
 	}
 		
 </script>	
-<?php include "includes/cmg-head-metadata.inc"; ?> 
-<?php include "includes/cmg-head-metrics.inc"; ?> 
+
+  <?php include "includes/cmg-head-metadata.inc"; ?> 
+  <?php include "includes/cmg-head-metrics.inc"; ?> 
+
 </head> 
 <body onload="init();"> 
 
