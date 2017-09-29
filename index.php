@@ -90,7 +90,8 @@
 	}
 		
 </script>	
-<?php include "js/metrics-head.js"; ?>	
+<?php include "includes/cmg-head-metadata.inc"; ?> 
+<?php include "includes/cmg-head-metrics.inc"; ?> 
 </head> 
 <body onload="init();"> 
 
@@ -110,6 +111,6 @@
 <div id="document"> 
 </div> 
  
-  <?php include "js/metrics.js"; ?>
+<?php include "includes/cmg-body-scripts.inc"; ?> 
 </body> 
 </html>
